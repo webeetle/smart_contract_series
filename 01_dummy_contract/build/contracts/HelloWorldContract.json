@@ -1,0 +1,329 @@
+{
+  "contractName": "HelloWorldContract",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "helloWorld",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"helloWorld\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/paranoiasystem/smart_contract_series/01_dummy_contract/contracts/HelloWord.sol\":\"HelloWorldContract\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/paranoiasystem/smart_contract_series/01_dummy_contract/contracts/HelloWord.sol\":{\"keccak256\":\"0x731bee48c6e8a3784a11d289fcd33453940e3687f3dbda8511b3f05aaaa479f1\",\"urls\":[\"bzz-raw://541c70b5e5b365a8ba2256a464e9f0ce37adfeb826fdb0d270ce30ed0b044722\",\"dweb:/ipfs/QmSdoe8GipRp3DiW9pPQ891SuER1ri1Ec7GoEAZTcYwpgp\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061011d806100206000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063c605f76c14602d575b600080fd5b603360ab565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101560715780820151818401526020810190506058565b50505050905090810190601f168015609d5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60606040518060400160405280600d81526020017f48656c6c6f2c20576f726c64210000000000000000000000000000000000000081525090509056fea265627a7a723158202b3a73f2c378a18a4094d03ab0cd0b84df547969266c4ef56e2ebf62fc35fb5964736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063c605f76c14602d575b600080fd5b603360ab565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101560715780820151818401526020810190506058565b50505050905090810190601f168015609d5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60606040518060400160405280600d81526020017f48656c6c6f2c20576f726c64210000000000000000000000000000000000000081525090509056fea265627a7a723158202b3a73f2c378a18a4094d03ab0cd0b84df547969266c4ef56e2ebf62fc35fb5964736f6c63430005100032",
+  "sourceMap": "185:199:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;185:199:0;;;;;;;",
+  "deployedSourceMap": "185:199:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;185:199:0;;;;;;;;;;;;;;;;;;;285:97;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;285:97:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;328:13;353:22;;;;;;;;;;;;;;;;;;;285:97;:::o",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0; // andiamo a definire per quali versione del compilatore è possibile compilare il seguente contratto\n\n// il contratto \ncontract HelloWorldContract {\n    // una fuzione pubblica che ritorna un valore di tipo stringa\n    function helloWorld() public pure returns (string memory) {\n        return \"Hello, World!\";\n    }\n}",
+  "sourcePath": "/home/paranoiasystem/smart_contract_series/01_dummy_contract/contracts/HelloWord.sol",
+  "ast": {
+    "absolutePath": "/home/paranoiasystem/smart_contract_series/01_dummy_contract/contracts/HelloWord.sol",
+    "exportedSymbols": {
+      "HelloWorldContract": [
+        10
+      ]
+    },
+    "id": 11,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:32:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 10,
+        "linearizedBaseContracts": [
+          10
+        ],
+        "name": "HelloWorldContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 8,
+              "nodeType": "Block",
+              "src": "343:39:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "48656c6c6f2c20576f726c6421",
+                    "id": 6,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "360:15:0",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_acaf3289d7b601cbd114fb36c4d29c85bbfd5e133f14cb355c3fd8d99367964f",
+                      "typeString": "literal_string \"Hello, World!\""
+                    },
+                    "value": "Hello, World!"
+                  },
+                  "functionReturnParameters": 5,
+                  "id": 7,
+                  "nodeType": "Return",
+                  "src": "353:22:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 9,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "helloWorld",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "304:2:0"
+            },
+            "returnParameters": {
+              "id": 5,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9,
+                  "src": "328:13:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 3,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "328:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "327:15:0"
+            },
+            "scope": 10,
+            "src": "285:97:0",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 11,
+        "src": "185:199:0"
+      }
+    ],
+    "src": "32:352:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/paranoiasystem/smart_contract_series/01_dummy_contract/contracts/HelloWord.sol",
+      "exportedSymbols": {
+        "HelloWorldContract": [
+          10
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".22",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "32:32:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            10
+          ],
+          "name": "HelloWorldContract",
+          "scope": 11
+        },
+        "children": [
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "helloWorld",
+              "scope": 10,
+              "stateMutability": "pure",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 2,
+                "name": "ParameterList",
+                "src": "304:2:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 9,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 3,
+                        "name": "ElementaryTypeName",
+                        "src": "328:6:0"
+                      }
+                    ],
+                    "id": 4,
+                    "name": "VariableDeclaration",
+                    "src": "328:13:0"
+                  }
+                ],
+                "id": 5,
+                "name": "ParameterList",
+                "src": "327:15:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 5
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "hexvalue": "48656c6c6f2c20576f726c6421",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "subdenomination": null,
+                          "token": "string",
+                          "type": "literal_string \"Hello, World!\"",
+                          "value": "Hello, World!"
+                        },
+                        "id": 6,
+                        "name": "Literal",
+                        "src": "360:15:0"
+                      }
+                    ],
+                    "id": 7,
+                    "name": "Return",
+                    "src": "353:22:0"
+                  }
+                ],
+                "id": 8,
+                "name": "Block",
+                "src": "343:39:0"
+              }
+            ],
+            "id": 9,
+            "name": "FunctionDefinition",
+            "src": "285:97:0"
+          }
+        ],
+        "id": 10,
+        "name": "ContractDefinition",
+        "src": "185:199:0"
+      }
+    ],
+    "id": 11,
+    "name": "SourceUnit",
+    "src": "32:352:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x61bFD4c0cF142e12DC08b8Da83111A357dD8d9e6",
+      "transactionHash": "0x560abd48566941f4bc6df73b4e5256510fcdcbf4fb54b4729ba780a55c919679"
+    }
+  },
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-04-21T18:22:31.824Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
